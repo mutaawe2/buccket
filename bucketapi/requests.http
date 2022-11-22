@@ -1,0 +1,30 @@
+POST http://localhost:5000/api/register
+Content-Type: application/json
+
+{
+    "username": "test",
+    "password": "test123",
+    "email": "test@gmail.com"
+}
+
+###
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+    "email": "test@gmail.com",
+    "password": "test123"
+}
+
+###
+POST http://localhost:5000/api/bucketlists
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY2ODE3NjEwOCwianRpIjoiMThkNzY5ZDctMTRlZS00NmQ3LWJiYzAtMmU0Y2IwMzAwYWIyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjY4MTc2MTA4LCJleHAiOjE2NjgxNzcwMDh9.NqucWAMt6LsDw0wzbQsuJJepPLPIwWzkYqDkmLXhfMA
+
+{
+    "name" : "lounge MentalHealth USSD ",
+    "description":" This is a deciated code i.e #233 accessible on phone 
+                    to help people with mental health issues get mental health services easily",
+
+    "completed": true
+}
